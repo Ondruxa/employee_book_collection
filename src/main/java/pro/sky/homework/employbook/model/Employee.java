@@ -1,4 +1,4 @@
-package pro.sky.homework.employbook;
+package pro.sky.homework.employbook.model;
 
 import java.util.Objects;
 
@@ -17,6 +17,10 @@ public class Employee {
 
     public String getlastName() {
         return lastName;
+    }
+
+    public String getFullName() {
+        return firstName + " " + lastName;
     }
 
     public void setFirstName(String firstName) {
