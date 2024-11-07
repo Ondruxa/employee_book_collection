@@ -3,8 +3,6 @@ package pro.sky.homework.employbook.service;
 import pro.sky.homework.employbook.model.Employee;
 
 import java.util.Collection;
-import java.util.List;
-import java.util.Map;
 
 public interface EmployeeService {
     Employee add(String firstName, String lastName, int salary, int departmentId);

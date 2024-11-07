@@ -22,7 +22,6 @@ public class DepartmentServiceImpl implements DepartmentService {
                 .filter(employee -> employee.getDepartmentId() == departmentNumberId)
                 .min(Comparator.comparingInt(Employee::getSalary))
                 .orElse(null);
-
     }
 
     public Employee findEmployeeWithMaxSalaryOnDepartment(int departmentNumberId) {
